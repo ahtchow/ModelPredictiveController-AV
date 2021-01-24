@@ -1,0 +1,8 @@
+To change Permission:
+
+chmod +x <Application_Dir>/term2_sim_mac/term2_sim.app/Contents/MacOS/term2_sim_mac
+
+
+Download Link:
+
+https://github.com/udacity/self-driving-car-sim/releases/tag/v1.45

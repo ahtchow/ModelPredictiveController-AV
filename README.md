@@ -106,4 +106,4 @@ CppAD is a library we'll use for automatic differentiation. By using CppAD we do
 In order to use CppAD effectively, we have to use its types instead of regular double or std::vector types.
 
 Source: [CppAD](https://github.com/coin-or/CppAD)
- 
+
