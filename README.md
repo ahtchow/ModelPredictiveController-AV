@@ -64,13 +64,13 @@ Model Predictive Control uses an optimizer to find the control inputs that minim
 - Define vehicle model and constrains as actual limitiations.
 - Define cost functions
 
-![MPC_Setup](images/MPC_Setup.png)
+![MPC_Setup](images/MPC_Setup.PNG)
 
 ### Optimization Solver
 
 - Use initial state, model constraints and cost function to return a vector of control inputs that minimize the cost function.
 
-![MPC_Solver](images/MPC_Solver.png)
+![MPC_Solver](images/MPC_Solver.PNG)
 
 Steps:
 
