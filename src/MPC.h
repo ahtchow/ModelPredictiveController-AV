@@ -10,14 +10,23 @@
 #include "Eigen-3.3/Eigen/Core"
 
 typedef CPPAD_TESTVECTOR(CppAD::AD<double>) ADvector;
+typedef CPPAD_TESTVECTOR(double) Dvector;
 
 class MPC {
 
 private:
 
-  const size_t N; // Duration
-  const double dt; // Timestep
-  const double Lf; // This is the length from front to CoG. (Similar to Radius)
+  size_t N; // Duration
+  double dt; // Timestep
+  double Lf; // This is the length from front to CoG. (Similar to Radius)
+  size_t x_start; // Reference for start of x-values in states vector
+  size_t y_start; // Reference for start of y-values in states vector
+  size_t psi_start; // Reference for start of heading values in states vector
+  size_t v_start; // Reference for start of velocity values in states vector
+  size_t cte_start; // Reference for start of cross track error values in states vector
+  size_t epsi_start; // Reference for start of orientation error values in states vector
+  size_t delta_start; // Reference for start of heading actuators values in states vector
+  size_t a_start; // Reference for start of acceleration actuators values in states vector
 
 public:
   
@@ -42,25 +51,6 @@ public:
    */
   std::vector<double> Solve(const Eigen::VectorXd &state, 
                             const Eigen::VectorXd &coeffs);
-
-  /**
-   * @brief Evaluate polynomial given x-value
-   * 
-   * @param coeffs - coefficients to polynomial
-   * @param x - input value
-   * @return y values
-   */
-  double Polyeval(const Eigen::VectorXd &coeffs, double x);
-  
-  /**
-   * @brief Fit a polynomial with given parameters
-   * 
-   * @param xvals - x values
-   * @param yvals - y values
-   * @param order - order of polynomial
-   * @return double - coefficients of polynomial
-   */
-  Eigen::VectorXd Polyfit(const Eigen::VectorXd &xvals, const Eigen::VectorXd &yvals, int order);
 
 };
 

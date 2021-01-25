@@ -1,7 +1,6 @@
 #ifndef UTILS_HPP
 #define UTILS_HPP
 
-#include <math.h>
 #include <string>
 #include "Eigen-3.3/Eigen/Core"
 
@@ -33,5 +32,25 @@ double rad2deg(double x);
  * @return string 
  */
 string hasData(string s);
+
+/**
+ * @brief Evaluate polynomial given x-value
+ * 
+ * @param coeffs - coefficients to polynomial
+ * @param x - input value
+ * @return y values
+ */
+double Polyeval(const Eigen::VectorXd &coeffs, double x);
+
+/**
+ * @brief Fit a polynomial with given parameters
+ * 
+ * @param xvals - x values
+ * @param yvals - y values
+ * @param order - order of polynomial
+ * @return double - coefficients of polynomial
+ */
+Eigen::VectorXd Polyfit(const Eigen::VectorXd &xvals, const Eigen::VectorXd &yvals, int order);
+
 
 #endif // UTILS_HPP
