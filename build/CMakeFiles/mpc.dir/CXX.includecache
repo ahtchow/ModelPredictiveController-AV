@@ -789,6 +789,8 @@ string
 -
 Eigen-3.3/Eigen/Core
 /home/adrian/Documents/GitHub/ModelPredictiveController-AV/src/Eigen-3.3/Eigen/Core
+utils.h
+/home/adrian/Documents/GitHub/ModelPredictiveController-AV/src/utils.h
 
 /home/adrian/Documents/GitHub/ModelPredictiveController-AV/src/json.hpp
 algorithm
@@ -871,10 +873,20 @@ json.hpp
 /home/adrian/Documents/GitHub/ModelPredictiveController-AV/src/json.hpp
 MPC.h
 /home/adrian/Documents/GitHub/ModelPredictiveController-AV/src/MPC.h
+polynomial.h
+/home/adrian/Documents/GitHub/ModelPredictiveController-AV/src/polynomial.h
+
+/home/adrian/Documents/GitHub/ModelPredictiveController-AV/src/polynomial.h
+Eigen-3.3/Eigen/Core
+/home/adrian/Documents/GitHub/ModelPredictiveController-AV/src/Eigen-3.3/Eigen/Core
+
+/home/adrian/Documents/GitHub/ModelPredictiveController-AV/src/utils.cpp
+utils.h
+/home/adrian/Documents/GitHub/ModelPredictiveController-AV/src/utils.h
 
 /home/adrian/Documents/GitHub/ModelPredictiveController-AV/src/utils.h
 string
 -
-Eigen-3.3/Eigen/Core
-/home/adrian/Documents/GitHub/ModelPredictiveController-AV/src/Eigen-3.3/Eigen/Core
+math.h
+-
 

@@ -11,6 +11,7 @@
 #include "utils.h"
 #include "json.hpp"
 #include "MPC.h"
+#include "polynomial.h"
 
 using nlohmann::json;
 using std::string;

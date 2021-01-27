@@ -142,6 +142,7 @@ CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/Eigen-3.3/Eigen/src/plugins/MatrixCwise
 CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/Eigen-3.3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.cpp
 CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/MPC.h
+CMakeFiles/mpc.dir/src/MPC.cpp.o: ../src/utils.h
 
 CMakeFiles/mpc.dir/src/main.cpp.o: ../src/Eigen-3.3/Eigen/Cholesky
 CMakeFiles/mpc.dir/src/main.cpp.o: ../src/Eigen-3.3/Eigen/Core
@@ -304,5 +305,9 @@ CMakeFiles/mpc.dir/src/main.cpp.o: ../src/Eigen-3.3/Eigen/src/plugins/MatrixCwis
 CMakeFiles/mpc.dir/src/main.cpp.o: ../src/MPC.h
 CMakeFiles/mpc.dir/src/main.cpp.o: ../src/json.hpp
 CMakeFiles/mpc.dir/src/main.cpp.o: ../src/main.cpp
+CMakeFiles/mpc.dir/src/main.cpp.o: ../src/polynomial.h
 CMakeFiles/mpc.dir/src/main.cpp.o: ../src/utils.h
+
+CMakeFiles/mpc.dir/src/utils.cpp.o: ../src/utils.cpp
+CMakeFiles/mpc.dir/src/utils.cpp.o: ../src/utils.h
 
